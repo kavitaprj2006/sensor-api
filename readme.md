@@ -6,8 +6,6 @@ This project is inspired by the **UCSC OSRE / ENTS (Environmental NeTworked Sens
 
 The API supports adding sensor readings, querying them by sensor type, and exporting data as CSV.
 
----
-
 ## Features
 
 - Add sensor readings (sensor, value, timestamp)
@@ -16,8 +14,6 @@ The API supports adding sensor readings, querying them by sensor type, and expor
 - SQLite database storage using SQLAlchemy ORM
 - Modular folder structure (routes, models, utilities)
 
----
-
 ## Tech Stack
 
 - **Python**
@@ -25,8 +21,6 @@ The API supports adding sensor readings, querying them by sensor type, and expor
 - **Flask-SQLAlchemy**
 - **Flask-CORS**
 - **SQLite**
-
----
 
 ## Project Structure
 
@@ -52,8 +46,6 @@ sensor-api/
 │── readme.md
 
 ```
-
----
 
 ## Installation & Setup
 
@@ -102,8 +94,6 @@ The API will run on:
 http://127.0.0.1:5000
 ```
 
----
-
 ## API Endpoints
 
 ### Add Sensor Reading
@@ -134,8 +124,6 @@ Example response:
 }
 ```
 
----
-
 ### Get Sensor Readings
 
 **GET** `/api/readings`
@@ -163,7 +151,6 @@ Response:
 ]
 ```
 
----
 
 ### Export Sensor Readings as CSV
 
@@ -183,7 +170,6 @@ This downloads:
 
 `sensor_readings.csv`
 
----
 
 ## Example cURL Commands
 
@@ -207,8 +193,6 @@ curl http://127.0.0.1:5000/api/readings?sensor=temperature
 curl http://127.0.0.1:5000/api/readings/export/csv?sensor=temperature
 ```
 
----
-
 ## Purpose of This Project
 
 This project is built as a preparation project for open source contribution programs like **UCSC OSRE / ENTS** and similar research-based open source initiatives.
@@ -220,7 +204,6 @@ It demonstrates:
 - CSV export functionality (important for research datasets)
 - clean backend folder structure and maintainable code organization
 
----
 
 ## Future Improvements (Planned)
 
@@ -231,7 +214,6 @@ It demonstrates:
 - Unit tests using PyTest
 - Docker support for easy deployment
 
----
 
 ## Author
 
@@ -239,4 +221,5 @@ It demonstrates:
 GitHub: [https://github.com/kavitaprj2006](https://github.com/kavitaprj2006)
 
 ```
+
 
